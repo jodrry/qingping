@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">清屏</string>
+    <string name="app_slogan">把开屏广告挡在视线之外</string>
+
+    <string name="accessibility_service_label">清屏 · 广告拦截</string>
+    <string name="accessibility_description">用于识别并关闭其他应用中的开屏广告，以及拦截误触导致的跳转。清屏只在本机读取当前窗口的控件文字，不会上传输入内容。</string>
+    <string name="accessibility_summary">自动查找“跳过 / 关闭广告”，并在误触跳转时返回。</string>
+    <string name="service_ready">清屏已就绪</string>
+
+    <string name="status_on">守护中</string>
+    <string name="status_off">无障碍服务未开启</string>
+    <string name="status_on_detail">已开启无障碍服务。打开其他应用时，清屏会自动查找并点击“跳过 / 关闭广告”。</string>
+    <string name="status_off_detail">需要手动开启无障碍服务。系统不允许应用自行开启这项权限。</string>
+    <string name="btn_open_accessibility">去开启无障碍服务</string>
+    <string name="btn_accessibility_settings">无障碍服务设置</string>
+
+    <string name="stat_total">总拦截</string>
+    <string name="stat_today">今日</string>
+    <string name="stat_apps">应用数</string>
+    <string name="stat_times">次</string>
+    <string name="stat_meta">开屏 %1$d · 跳转 %2$d · %3$s</string>
+
+    <string name="section_apps">按应用统计</string>
+    <string name="clear">清空</string>
+    <string name="empty_stats">还没有拦截记录\n开启服务后，拦截结果会按应用显示在这里。</string>
+
+    <string name="settings_section">拦截设置</string>
+    <string name="switch_splash">开屏广告拦截</string>
+    <string name="switch_splash_desc">自动查找并点击“跳过 / 关闭广告”</string>
+    <string name="switch_jump">误触跳转保护</string>
+    <string name="switch_jump_desc">短时间内跳转到浏览器、应用商店等时自动返回</string>
+    <string name="switch_boot">开机自启与常驻守护</string>
+    <string name="switch_boot_desc">重启后尝试自动启动前台守护；仍受厂商后台策略影响</string>
+
+    <string name="keep_alive">保持运行</string>
+    <string name="keep_alive_desc">将清屏加入电池优化白名单，并在厂商自启动管理中允许自启动。Android 与厂商系统仍可能清理后台。</string>
+    <string name="btn_battery">忽略电池优化</string>
+    <string name="btn_battery_done">已忽略电池优化</string>
+    <string name="btn_autostart">设置厂商自启动白名单</string>
+
+    <string name="footer_note">说明：清屏只能在广告已经显示后尝试关闭，无法阻止广告加载；SurfaceView、FLAG_SECURE 等无法读取的界面无法自动操作。误触保护依靠“点击后短时间内跳转”的判断，可能误拦正常外链，可随时关闭。</string>
+
+    <string name="notification_channel_name">清屏守护</string>
+    <string name="notification_channel_desc">保持清屏拦截服务运行</string>
+    <string name="notification_title">清屏守护中</string>
+    <string name="notification_text_ready">开屏广告拦截已就绪</string>
+    <string name="notification_text_disabled">无障碍服务未开启，点此设置</string>
+    <string name="notification_action_settings">设置</string>
+
+    <string name="jump_blocked">已拦截一次误触跳转</string>
+    <string name="splash_skipped">已跳过开屏广告</string>
+    <string name="toast_accessibility_needed">请先开启清屏的无障碍服务</string>
+    <string name="toast_guard_started">已启动清屏守护</string>
+    <string name="toast_battery_done">已在电池优化白名单中</string>
+    <string name="toast_stats_cleared">统计已清空</string>
+    <string name="toast_open_settings_failed">无法打开系统设置，请手动在系统设置中操作</string>
+
+    <string name="clear_stats_title">清空统计？</string>
+    <string name="clear_stats_message">只会删除本机统计，不会影响拦截设置。</string>
+    <string name="cancel">取消</string>
+
+    <string name="time_just_now">刚刚</string>
+    <string name="time_minutes_ago">%1$d 分钟前</string>
+    <string name="time_hours_ago">%1$d 小时前</string>
+</resources>
